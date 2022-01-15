@@ -8,7 +8,14 @@ class HomePage  extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    int con_date=100;
+
+    String connection_date="2022-10-01";
+    String user_name="skynaut@gmail.com";
+
+    String product_reg_no="red-23-112";
+
+    String network_status="connection";
+
     double width = MediaQuery.of(context).size.width;
         double height = MediaQuery.of(context).size.height;
 
@@ -67,7 +74,7 @@ body: Container(
             Text("   Connection Date " ,style: TextStyle(fontSize: width*0.035,color: Colors.grey)),
           ],),
           ),
-          Text("2022.10.01",  style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
+          Text("$connection_date",  style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
 )
         ],),
       ),
@@ -86,7 +93,7 @@ body: Container(
             Text("   User Name ",style: TextStyle(fontSize: width*0.035,color: Colors.grey)),
           ],),
           ),
-          Text("sky@skynaut",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
+          Text("$user_name",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
 )
         ],),
       ),
@@ -105,7 +112,7 @@ body: Container(
             Text("  Product Reg.No ",style: TextStyle(fontSize: width*0.035,color: Colors.grey)),
           ],),
           ),
-          Text("2dka-asd2-1222",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
+          Text("$product_reg_no",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
 )
         ],),
       ),
@@ -125,7 +132,7 @@ body: Container(
             Text("   Network Status ",style: TextStyle(fontSize: width*0.035,color: Colors.grey)),
           ],),
           ),
-          Text("Connected",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
+          Text("$network_status",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.04),
 )
         ],),
       )

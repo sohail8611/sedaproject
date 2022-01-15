@@ -17,6 +17,12 @@ class VideoList  extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
         double height = MediaQuery.of(context).size.height;
+        var date_list =["2022-21-2","2022-10-10"];
+        var time_list=['20:50:21~23:10:47',"10:02:23~15:10:22"];
+        var event_list=['driving',"driving"];
+        var size_list=['1.6M',"1.6M"];
+        var download_link_list=['httpgoogle.com','http://downloadvideo.com'];
+      
     return Scaffold(
       backgroundColor: Color(0xFFe6e6e6),
       body: Align(
@@ -166,7 +172,7 @@ class VideoList  extends StatelessWidget {
                            child: Column(children: [
                              
                              SizedBox(height: 7,),
-                             Text("2022-01-22",style: TextStyle(fontSize: width*0.032),),
+                             Text(date_list[0],style: TextStyle(fontSize: width*0.032),),
                              
                            ],),
                          )
@@ -181,7 +187,7 @@ class VideoList  extends StatelessWidget {
                           height: 30,
                            child: Column(children: [
                              SizedBox(height: 7,),
-                             Text("20:22:53~23:50:20",style: TextStyle(fontSize: width*0.032),)
+                             Text(time_list[0],style: TextStyle(fontSize: width*0.032),)
                              
                            ],),
                          )
@@ -197,7 +203,7 @@ class VideoList  extends StatelessWidget {
                             height: 30,
                            child: Column(children: [
                              SizedBox(height: 7,),
-                             Text("driving",style: TextStyle(fontSize: width*0.032),)
+                             Text(event_list[0],style: TextStyle(fontSize: width*0.032),)
                              
                            ],),
                          )
@@ -213,7 +219,7 @@ class VideoList  extends StatelessWidget {
                            height: 30,
                            child: Column(children: [
                              SizedBox(height: 7,),
-                             Text("1.6M",style: TextStyle(fontSize: width*0.032),)
+                             Text(size_list[0],style: TextStyle(fontSize: width*0.032),)
                              
                            ],),
                          )
