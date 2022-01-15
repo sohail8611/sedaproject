@@ -146,6 +146,7 @@ class VideoList  extends StatelessWidget {
 
 
                   Container(
+                    
 
 
                   
@@ -156,8 +157,10 @@ class VideoList  extends StatelessWidget {
 
                    Container(child: Column(children: [
                      
-                         Text("Date",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.035),),
+                     
+                         Text("Date",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.032),),
                          SizedBox(height: 12,),
+
                          for (var i=1;i<15;i++)Container(
                            height: 30,
                            child: Column(children: [
@@ -170,8 +173,9 @@ class VideoList  extends StatelessWidget {
                          
 
                    ],),),
+                   SizedBox(width: 5,),
                     Container(child: Column(children: [
-                         Text("Time",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.035)),
+                         Text("Time",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.032)),
                           SizedBox(height: 12,),
                         for (var i=1;i<15;i++)Container(
                           height: 30,
@@ -184,8 +188,10 @@ class VideoList  extends StatelessWidget {
                         
 
                    ],),),
+
+                   SizedBox(width: 5,),
                     Container(child: Column(children: [
-                         Text("Event",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.035)),
+                         Text("Event",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.032)),
                           SizedBox(height: 12,),
                           for (var i=1;i<15;i++)Container(
                             height: 30,
@@ -198,8 +204,10 @@ class VideoList  extends StatelessWidget {
                        
 
                    ],),),
+
+                   SizedBox(width: 5,),
                     Container(child: Column(children: [
-                         Text("File Size",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.035)),
+                         Text("Size",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.032)),
                           SizedBox(height: 12,),
                          for (var i=1;i<15;i++)Container(
                            height: 30,
@@ -211,8 +219,10 @@ class VideoList  extends StatelessWidget {
                          )
                        
                    ],),),
+
+                   
                     Container(child: Column(children: [
-                         Text("Download",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.035)),
+                         Text("Download",style: TextStyle(fontWeight: FontWeight.bold,fontSize: width*0.032)),
                           SizedBox(height: 12,),
                          for (var i=1;i<15;i++)Container(
                            height: 30,
